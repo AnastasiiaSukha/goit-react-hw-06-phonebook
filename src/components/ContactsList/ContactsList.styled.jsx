@@ -9,7 +9,7 @@ margin-top: 30px;
 padding: 5px;
 >li {
     margin-bottom:10px;
-    width: 350px;
+    width: 450px;
     
 }
 `
