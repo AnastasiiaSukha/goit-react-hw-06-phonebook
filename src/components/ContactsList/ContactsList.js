@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { List, DeleteButton} from "./ContactsList.styled";
 
 const ContactsList = ({ contacts, onDeleteContact}) => {
@@ -14,6 +15,17 @@ const ContactsList = ({ contacts, onDeleteContact}) => {
             </li>
         ))}
             </List>
+}
+
+ContactsList.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    })
+  ),
+  onDeleteContact: PropTypes.func,
 }
 
 export default ContactsList;

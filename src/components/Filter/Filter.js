@@ -9,4 +9,9 @@ const Filter = ({ value, onChange })=>{
         </FilterLabel>
 }
 
+Filter.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
+};
+
 export default Filter;
