@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from "react";
+import PropTypes from 'prop-types';
 import { Input, Label, Form, AddButton} from "./ContactForm.styled";
 
 
@@ -65,5 +66,3 @@ ContactForm.propTypes = {
 };
 
 export default ContactForm;
-
-// console.log();
