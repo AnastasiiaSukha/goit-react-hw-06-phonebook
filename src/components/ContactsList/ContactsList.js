@@ -17,7 +17,6 @@ const ContactsList = ({ contacts, onDeleteContact}) => {
             </List>
 }
 
-console.log('hi')
 
 ContactsList.propTypes = {
   contacts: PropTypes.arrayOf(
