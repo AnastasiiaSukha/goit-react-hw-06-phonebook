@@ -16,9 +16,6 @@ export default function App() {
   const filter = useSelector(getFilterValue);
 
 
-  useEffect(() => {
-    window.localStorage.setItem('contacts', JSON.stringify(contacts));
-  }, [contacts]);
 
 
   const deleteContact = contactId => dispatch(removeContact(contactId));
